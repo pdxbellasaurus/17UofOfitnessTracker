@@ -10,19 +10,18 @@ const workoutSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  workoutData:[{
+  exercises:[{
       type:{
           type: String,
-          required: 'Select a type.'
+          required: [true, 'Select a type.']
       },
       name: {
         type: String,
-        trim: true,
-        required: 'Enter a name for the workout.'
+        required: [true, 'Enter a name for the workout.']
       },
       duration: {
         type: Number,
-        required: 'Enter duration in minutes',
+        required: [true, 'Enter duration in minutes'],
         validate: [validator, 'Duration must be a number']
       },
       //CARDIO ONLY
@@ -34,20 +33,31 @@ const workoutSchema = new Schema({
       //RESISTANCE ONLY
       weight: {
         type: Number,
-        required: 'Enter an amount in pounds.',
+        required: [true, 'Enter an amount in pounds.'],
         validate: [validator, 'Weight must be a number']
       },
       sets: {
         type: Number,
-        required: 'Enter a number of sets completed.',
+        required: [true, 'Enter a number of sets completed.'],
         validate: [validator, 'Sets must be a number']
       },
       reps: {
         type: Number,
-        required: 'Enter the number of reps.',
+        required: [true, 'Enter the number of reps.'],
         validate: [validator, 'Reps must be a number']
-      }
+      },
   }]
+},
+{
+toJSON: {
+  virtuals: true
+}
+});
+
+workoutSchema.virtual("totalDuration").get(function() {
+  return this.exercises.reduce((sum, exercise) => {
+    return sum + exercise.duration;
+  }, 0)
 });
 
 const Workout = mongoose.model('Workout', workoutSchema);
