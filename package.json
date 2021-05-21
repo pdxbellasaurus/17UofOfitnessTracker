@@ -8,17 +8,18 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
-  },"repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/pdxbellasaurus/17UofOfitnessTracker.git"
   },
-  
   "bugs": {
     "url": "https://github.com/pdxbellasaurus/17UofOfitnessTracker/issues"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
