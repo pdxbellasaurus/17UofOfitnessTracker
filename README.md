@@ -36,11 +36,15 @@ Node.js - There are installers and packages for all the common operating systems
    ```sh
    npm i
    ```
-3. Start the server
+3. Add seed data
+   ```sh
+   npm run seeds
+   ```
+4. Start the server
    ```sh
    npm start
    ```
-4. Go to your web browser and go to web address
+5. Go to your web browser and go to web address
    ```
    localhost:3000
    ```
