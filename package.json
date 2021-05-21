@@ -8,6 +8,13 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
+  },"repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdxbellasaurus/17UofOfitnessTracker.git"
+  },
+  
+  "bugs": {
+    "url": "https://github.com/pdxbellasaurus/17UofOfitnessTracker/issues"
   },
   "author": "",
   "license": "ISC",
