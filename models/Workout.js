@@ -1,17 +1,17 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-function validator (v) {
-    return !Number.isNaN(v);
+function validator (value) {
+    return !Number.isNaN(value);
   };
 
 const workoutSchema = new Schema({
-  day:{
+  day: {
     type: Date,
     default: Date.now
   },
-  exercises:[{
-      type:{
+  exercises: [{
+      type: {
           type: String,
           required: [true, 'Select a type.']
       },
@@ -54,12 +54,12 @@ toJSON: {
 }
 });
 
-workoutSchema.virtual("totalDuration").get(function() {
+workoutSchema.virtual('totalDuration').get(function() {
   return this.exercises.reduce((sum, exercise) => {
     return sum + exercise.duration;
   }, 0)
 });
 
-const Workout = mongoose.model('Workout', workoutSchema);
+const Workout = mongoose.model('workout', workoutSchema);
 
 module.exports = Workout;
