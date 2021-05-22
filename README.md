@@ -1,6 +1,6 @@
 # noSQL: Fitness Tracker
 
-### [Launch the Application]()
+### [Launch the Application](safe-eyrie-4508)
 
 ## Table of Contents
 - [Overview](#Overview)
@@ -13,11 +13,10 @@
     * [Dashboard](#Dashboard)
 
 ## Overview
-The applications allows a user to view create and track daily workouts. Users are able to log multiple exercises in a workout on a given day.
+The applications allows a user to view create and track daily workouts by logging multiple exercises in a workout on a given day.
 
-Mongo database with a Mongoose schema and handle routes with Express.
+The application's backend uses Mongo database with a Mongoose schema and handles routes with Express.
 
- As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
@@ -57,18 +56,20 @@ The user is able to:
   * Add exercises to the current workout plan or add add new exercises to a new workout plan from the landing page.
 
   * View the combined weight of multiple exercises and the the total duration of each workout from the past seven workouts on the dashboard `/stats` page.
-### The following images show the web application's appearance and functionality: 
 
-### Landing Page
+#### The following images show the web application's appearance and functionality: 
 
-<!-- ADD IMG -->
+#### Landing Page
+
+![Home](https://user-images.githubusercontent.com/74746211/119219410-52b11900-ba9a-11eb-8f83-95f1e80ea81f.PNG)
+
 #### Add Exercise Forms
 
-<!-- ADD IMG -->
+![Add_Workout](https://user-images.githubusercontent.com/74746211/119219431-6eb4ba80-ba9a-11eb-9c70-36728e495814.PNG)
 
 #### Dashboard
 
-<!-- ADD IMG -->
+![Dashboard](https://user-images.githubusercontent.com/74746211/119219414-5775cd00-ba9a-11eb-9b36-d3c096175276.PNG)
 
 ---------------------------
 
