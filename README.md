@@ -1,6 +1,6 @@
 # noSQL: Fitness Tracker
 
-### [Launch the Application](safe-eyrie-4508)
+### [Launch the Application](https://safe-eyrie-45087.herokuapp.com/)
 
 ## Table of Contents
 - [Overview](#Overview)
