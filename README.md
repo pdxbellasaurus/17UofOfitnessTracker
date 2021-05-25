@@ -4,12 +4,12 @@
 
 ## Table of Contents
 - [Overview](#Overview)
-- [Getting Started](#Getting)
+- [Getting Started](#getting-started)
     * [Prerequisites](#Prerequisites)
     * [Installation](#Installation)
-- [Application Functionality and Appearance](#Application)
-    * [Landing Page]()
-    * [Add Exercise Forms](#Add)
+- [Application Functionality and Appearance](#application-functionality-and-appearance)
+    * [Landing Page](#landing-page)
+    * [Add Exercise Forms](#add-exercise-forms)
     * [Dashboard](#Dashboard)
 
 ## Overview
